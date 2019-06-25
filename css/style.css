@@ -1,0 +1,696 @@
+/* common */
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;;
+  font-weight: lighter;
+  color: #444;
+}
+ul,p,dl,dd {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  padding-left: 0;
+}
+.floatWrap {
+  overflow: hidden;
+  zoom: 1;
+}
+.lh {
+  display: block;
+  height: 0.5em;
+}
+
+/* header */
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 768px;
+  background: url(../images/header_bg.jpg) 0 0 / cover repeat;
+}
+header h1 {
+  box-sizing: border-box;
+  height: 45px;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: normal;
+}
+header h1 img {
+  position: relative;
+  top: 5px;
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+}
+header div.kvArea01 {
+  height: calc( 100vh - 45px );
+}
+header div.kvArea01 img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+header div.kvArea01 img.img01 {
+  bottom: 55px;
+}
+header div.kvArea01 img.img02 {
+  bottom: 384px;
+}
+header div.kvArea01 p {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: right;
+}
+header div.kvArea01 p span {
+  font-size: 16px;
+}
+header > img {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+/* nav */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: calc( 100% - 100px );
+  max-width: 835px;
+  height: 219px;
+  margin: auto;
+  z-index: 99;
+}
+nav div.wrap {
+  position: absolute;
+  right: 0;
+  width: 150px;
+  height: 219px;
+  background: url(../images/nav_bg.png) 0 0 / contain no-repeat;
+}
+nav p {
+  padding-top: 70px;
+  padding-left: 44px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #fff;
+}
+nav p img {
+  position: absolute;
+  top: 76px;
+  left: 8px;
+  width: 30px;
+  height: 25px;
+}
+nav ul li a {
+  padding-left: 3px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: -0.13em;
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* kvArea02 */
+div.kvArea02 {
+  position: relative;
+  width: calc( 100% - 100px );
+  max-width: 835px;
+  margin: 100px auto 0;
+}
+div.kvArea02 > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+div.kvArea02 div.wrap {
+  display: table;
+  padding-top: 250px;
+}
+div.kvArea02 div.wrap p {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+div.kvArea02 div.wrap p img {
+  display: block;
+  width: 100%;
+}
+div.kvArea02 div.wrap > img {
+  display: table-cell;
+  vertical-align: middle;
+}
+div.kvArea02 > p {
+  margin-top: 65px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* section */
+section {
+  width: calc( 100% - 100px );
+  max-width: 835px;
+  margin: 0 auto 20px;
+  padding-bottom: 50px;
+}
+h2 {
+  margin: 0 0 50px;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+/* section.menu01 */
+section.menu01 {
+  margin-top: 70px;
+  background: url(../images/icon_footA.png) right bottom no-repeat;
+}
+section.menu01 ul {
+  margin-bottom: -30px;
+}
+section.menu01 ul li {
+  float: left;
+  width: calc( 50% - 30px );
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+section.menu01 ul li > img {
+  float: left;
+  width: 150px;
+  height: 120px;
+}
+section.menu01 ul li dl {
+  float: left;
+  width: calc( 100% - 170px );
+  margin-left: 20px;
+}
+section.menu01 ul li dl dt {
+  margin-bottom: 0.5em;
+  font-size: 18px;
+  font-weight: normal;
+}
+section.menu01 ul li dl dd {
+  font-size: 16px;
+  line-height: 26px;
+}
+section.menu01 ul li table {
+  float: right;
+  margin-top: 0.5em;
+}
+section.menu01 ul li table tr th,
+section.menu01 ul li table tr td {
+  width: 5em;
+}
+section.menu01 ul li table tr th {
+  font-weight: lighter;
+}
+section.menu01 ul li table tr th:first-child {
+  width: 4em;
+}
+
+/* section.menu02 */
+section.menu02 {
+  background: url(../images/icon_footB.png) right bottom no-repeat;
+}
+section.menu02 table {
+  margin: auto;
+  border-collapse:collapse;
+}
+section.menu02 table tr {
+  border-bottom: 1px solid #cccccc;
+}
+section.menu02 table tr th {
+  font-weight: lighter;
+}
+section.menu02 table tr th,
+section.menu02 table tr td {
+  width: 160px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 16px;
+  text-align: left;
+}
+section.menu02 table tr th:first-child {
+  width: 200px;
+}
+
+/* section.access */
+section.access {
+  width: 100%;
+  max-width: 935px;
+}
+section.access #g_map {
+  width: 100%;
+  height: 350px;
+  margin: auto;
+}
+
+/* section.contact */
+section.contact {
+  position: relative;
+  padding-bottom: 0;
+}
+section.contact div.wrap {
+  margin-right: -50px;
+}
+section.contact div.wrap p {
+  float: left;
+  max-width: calc( 100% - 400px );
+}
+section.contact div.wrap p:first-child {
+  font-size: 16px;
+  line-height: 24px;
+}
+section.contact div.wrap p:first-child span {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+section.contact div.wrap p:last-child {
+  position: relative;
+  font-size: 12px;
+  line-height: 22px;
+}
+section.contact div.wrap p:last-child::before {
+  position: absolute;
+  content: "";
+  width: 13.5em;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  z-index: -1;
+}
+section.contact div.wrap > img {
+  float: right;
+}
+section.contact > img {
+  position: absolute;
+  top: 340px;
+  right: 33%;
+  z-index: -2;
+}
+
+/* footer */
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  margin: 150px 0 0;
+  padding-top: 30px;
+  background: url(../images/footer_bg.jpg) 0 0 / cover repeat;
+  text-align: center;
+}
+footer small {
+  font-size: 14px;
+}
+footer small img {
+  position: relative;
+  width: 30px;
+  height: 25px;
+  top: 5px;
+  margin: 0 5px;
+}
+
+/* fadeIn */
+.fade_in01 {
+  opacity : 0;
+  transition-duration: 2s;
+}
+.fade_in01.scroll {
+  opacity : 1;
+}
+.fade_in02 {
+  opacity : 0;
+  transition-duration: 1s;
+}
+.fade_in02.scroll {
+  opacity : 1;
+}
+
+@media screen and (max-width:935px) {
+  div.kvArea02 div.wrap > img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width:830px) {
+  div.kvArea02 div.wrap > img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:787px) {
+  header div.kvArea01 img.img02 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none!important;
+  }
+
+  /* header */
+  header {
+    height: auto;
+    min-height: auto;
+    background: url(../images/header_bg.jpg) 0 0 / cover repeat;
+  }
+  header h1 {
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+  header div.kvArea01 {
+    height: auto;
+  }
+  header div.kvArea01 img.img01 {
+    position: static;
+    width: 343px;
+    height: auto;
+    margin: auto;
+  }
+  header div.kvArea01 p {
+    position: static;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+  }
+  header div.kvArea01 p span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  header > img {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  /* nav */
+  nav {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  nav .trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    background: #e0d6ca;
+    z-index: 999;
+  }
+  nav .trigger .off {
+    display: none;
+  }
+  nav .trigger .on {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 30px;
+    height: 23px;
+    margin: 8px auto 0;
+    border-top: 3px solid #c2ae96;
+    border-bottom: 3px solid #c2ae96;
+  }
+  nav .trigger .on::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+    background: #c2ae96;
+  }
+  nav.toggleOpen .trigger .on {
+    display: none;
+  }
+  nav.toggleOpen .trigger .off {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+  nav.toggleOpen .trigger .off::before,
+  nav.toggleOpen .trigger .off::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    bottom: 50%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 30px;
+    height: 3px;
+    background: #c2ae96;
+    transform: rotate(45deg);
+  }
+  nav.toggleOpen .trigger .off::after {
+    transform: rotate(-45deg);
+  }
+  nav div.wrap.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 364px;
+    background: url(../images/nav_bg_sp.png) 0 0 / contain no-repeat;
+    z-index: 99;
+  }
+  nav p {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+  }
+  nav p img {
+    position: absolute;
+    top: 125px;
+    left: 10px;
+  }
+  nav ul li a {
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: -0.05em;
+  }
+  nav ul li a:active {
+    text-decoration: underline;
+  }
+  nav div.wrap.toggle {
+  	display: none;
+  }
+
+  /* kvArea02 */
+  div.kvArea02 {
+    overflow: hidden;
+    width: 100%;
+    margin: 50px auto 0;
+  }
+  div.kvArea02 > img {
+    width: 60%;
+    height: auto;
+    left: -10%;
+  }
+  div.kvArea02 div.wrap {
+    display: block;
+  }
+  div.kvArea02 div.wrap p {
+    display: block;
+    padding: 0 10px 10px;
+  }
+  div.kvArea02 div.wrap > img {
+    position: absolute;
+    display: block;
+    width: 80%;
+    top: 25px;
+    right: -25%;
+  }
+  div.kvArea02 > p {
+    margin-top: 40px;
+    margin: 40px 10px 0;
+  }
+
+  /* section */
+  section {
+    width: 96%;
+    margin: 35px auto 0;
+    padding-top: 15px;
+  }
+  h2 {
+    margin: 0 0 25px;
+    font-size: 18px;
+  }
+
+  /* section.menu01 */
+  section.menu01 {
+    margin-top: 55px;
+  }
+  section.menu01 ul {
+    margin-bottom: -15px;
+  }
+  section.menu01 ul li {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  section.menu01 ul li dl {
+    width: calc( 100% - 160px );
+    margin-left: 10px;
+  }
+  section.menu01 ul li dl dt {
+    margin-bottom: 0.3em;
+  }
+  section.menu01 ul li dl dd {
+    line-height: 24px;
+  }
+  section.menu01 ul li table {
+    margin-top: 0.3em;
+  }
+
+  /* section.access */
+  section.access #g_map {
+    height: 200px;
+  }
+
+  /* section.contact */
+  section.contact {
+    width: 100%;
+  }
+  section.contact div.wrap {
+    margin-right: 0;
+  }
+  section.contact div.wrap p:first-child {
+    float: none;
+    max-width: 96%;
+    margin: auto;
+  }
+  section.contact div.wrap p:first-child span {
+    font-size: 18px;
+  }
+  section.contact div.wrap p:last-child {
+    float: left;
+    max-width: calc( 100% - 165px - 4% );
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 11px;
+    line-height: 21px;
+  }
+  section.contact div.wrap p:last-child::before {
+    display: none;
+  }
+  section.contact div.wrap > img {
+    float: left;
+    width: 165px;
+    margin-top: 15px;
+  }
+  section.contact > img {
+    position: relative;
+    width: 170px;
+    top: -70px;
+    left: 40%;
+  }
+
+  /* footer */
+  footer {
+    height: 50px;
+    margin: 0;
+    padding-top: 5px;
+  }
+
+  /* fadeIn解除 */
+  .fade_in01 {
+    opacity : 1;
+  }
+  .fade_in02 {
+    opacity : 1;
+  }
+}
+
+@media screen and (min-width:690px) and (max-width:767px) {
+  div.kvArea02 div.wrap {
+    padding-top: 430px;
+  }
+}
+
+@media screen and (min-width:590px) and (max-width:689px) {
+  div.kvArea02 div.wrap {
+    padding-top: 380px;
+  }
+}
+
+@media screen and (min-width:490px) and (max-width:589px) {
+  div.kvArea02 div.wrap {
+    padding-top: 330px;
+  }
+}
+
+@media screen and (min-width:390px) and (max-width:489px) {
+  div.kvArea02 div.wrap {
+    padding-top: 280px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  /* section.menu02 */
+  section.menu02 table {
+    width: 100%;
+  }
+  section.menu02 table tr th:first-child {
+    width: auto;
+    padding-right: 5px;
+  }
+  section.menu02 table tr th:nth-child(2),
+  section.menu02 table tr th + td {
+    width: 5.5em;
+  }
+  section.menu02 table tr th:last-child,
+  section.menu02 table tr td:last-child {
+    width: 5.5em;
+  }
+}
+
+@media screen and (max-width:320px) {
+  section.contact > img {
+    top: -40px;
+  }
+}
+@media screen\0 {
+  header div.kvArea01 img.img01 {
+    bottom: -140px;
+  }
+}
+@supports (-ms-ime-align: auto) {
+  header div.kvArea01 img.img01 {
+    bottom: -140px;
+  }
+}
