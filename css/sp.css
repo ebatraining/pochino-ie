@@ -136,7 +136,7 @@ li a{
 /* ↓↓↓↓↓ グローバルナビゲーションホバー時のエフェクト設定 開始 ↓↓↓↓↓ */
 li.off a::after{
   position: absolute;
-  bottom: -20%;
+  bottom: 0;
   left: 0;
   content: '';
   width: 100%;
@@ -153,7 +153,7 @@ li.off a:hover::after{
 }
 li.on a::after{
   position: absolute;
-  bottom: -20%;
+  bottom: 0;
   left: 0;
   content: '';
   width: 100%;
