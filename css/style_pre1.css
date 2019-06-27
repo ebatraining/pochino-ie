@@ -183,7 +183,7 @@ li.on a::after{
 h2{
   position: absolute;
   width:auto;
-  top:26%; /* 28%→26%に修正 */
+  top:28%;
   left:10%;
   font-weight: lighter;
   font-size:3.5vw;
@@ -194,9 +194,9 @@ h2{
 .about_p2{
   position: absolute;
   width:auto;
-  top:33%; /* 35%→33%に修正 */
+  top:35%;
   left:10%;
-  font-size:1.7vw; /* 1.5vw→1.7vwに修正 */
+  font-size:1.5vw;
   letter-spacing:0.5px;
   color:#FFFFFF;
 }
@@ -363,13 +363,10 @@ h4{
 .staff{
   width: 100%;
   height: auto;
-  display: flex; /* floatからflexboxによるレイアウトに変更 */
-  flex-direction: row; /* sf_tableクラスとstaff_cクラスを横並び */
-  position: relative; /* bird_imgsクラスのレイアウトを調整 */
 }
 
 .sf_table{
-  width:82%; /* flexboxによるレイアウトへ変更するため45%→82%に修正 */
+  width:45%;
   height:auto;
   table-layout:fixed;
   border-collapse:collapse;
@@ -377,7 +374,7 @@ h4{
   letter-spacing:0.5px;
   margin-left:0 auto;
   margin-right:0;
-  /*float: left;*/ /* flexboxによるレイアウトへ変更するためコメントアウト */
+  float: left;
 }
 
 #main3 th{
@@ -401,16 +398,16 @@ h4{
 }
 
 .staff_img{
-  padding-top:4%; /*写真を上寄せするため12%→4%に修正*/
-  width:48%; /* flexboxによるレイアウトへ変更するため30%→48%に修正 */
+  padding-top:1.8%; /*写真を上寄せするため12%→1.8%に修正*/
+  width:28%; /* 下要素との余白を大きくするため30%→28%に修正 */
   height: auto;
-  margin-left:20%; /* flexboxによるレイアウトへ変更するため10%→20%に修正 */
-  /*float: left;*/ /* flexboxによるレイアウトへ変更するためコメントアウト */
+  margin-left:10%;
+  float: left;
 }
 
 .sf_name{
-  width:88%; /* flexboxによるレイアウトへ変更するため50%→88%に修正 */
-  padding-left:2%;
+  width:50%;
+  /*padding-left:2%;*/ /* 名前を左寄せするためコメントアウト */
   text-align: center;
   font-size:2.5vw;
   letter-spacing:0.5px;
@@ -427,10 +424,9 @@ h4{
 
 /* ↓↓↓↓↓ bird_imgsクラスのレイアウトを調整 開始 ↓↓↓↓↓ */
 .bird_imgs{
-  position: absolute;
-  bottom: 0;
-  left: 47%;
-  width: 47%;
+  float: left;
+  width: 49%;
+  padding: 3% 0 0 .5%;
 }
 /* ↑↑↑↑↑ bird_imgsクラスのレイアウトを調整 終了 ↑↑↑↑↑ */
 

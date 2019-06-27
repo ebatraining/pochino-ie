@@ -364,8 +364,7 @@ h4{
   width: 100%;
   height: auto;
   display: flex; /* floatからflexboxによるレイアウトに変更 */
-  flex-direction: row; /* sf_tableクラスとstaff_cクラスを横並び */
-  position: relative; /* bird_imgsクラスのレイアウトを調整 */
+  flex-direction: row; /* sf_tableクラスとsf_divクラスを横並び */
 }
 
 .sf_table{
@@ -379,6 +378,14 @@ h4{
   margin-right:0;
   /*float: left;*/ /* flexboxによるレイアウトへ変更するためコメントアウト */
 }
+
+/* ↓↓↓↓↓ sf_divクラスのレイアウトを調整 開始 ↓↓↓↓↓ */
+.sf_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ↑↑↑↑↑ sf_divクラスのレイアウトを調整 終了 ↑↑↑↑↑ */
 
 #main3 th{
   vertical-align:text-top;
@@ -427,10 +434,8 @@ h4{
 
 /* ↓↓↓↓↓ bird_imgsクラスのレイアウトを調整 開始 ↓↓↓↓↓ */
 .bird_imgs{
-  position: absolute;
-  bottom: 0;
-  left: 47%;
-  width: 47%;
+  width: 88%;
+  padding-left: 2%;
 }
 /* ↑↑↑↑↑ bird_imgsクラスのレイアウトを調整 終了 ↑↑↑↑↑ */
 
